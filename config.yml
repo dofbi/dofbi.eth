@@ -1,0 +1,106 @@
+baseURL: / # if your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
+languageCode: en-us
+title: dofbi.eth
+paginate: 5
+theme: charlolamode
+relativeURLs: true
+
+
+
+menu:
+    main:
+        - name: Contact
+          url: /contact/
+          weight: 30
+        # - name: Articles
+        #   url: /articles/
+        #   weight: 20
+        # - name: Projects
+        #   url: /projects/
+        #   weight: 15
+
+     # - name: Categories
+        #   url: /categories/
+        #   weight: 10
+        # - name: new Tab
+        #   url: /newtab/
+        #   weight: defines order of tabs
+   
+
+
+params:
+    author: Mamadou Diagne
+
+
+    defaultTheme: auto
+    # disableThemeToggle: true
+    ShowShareButtons: true
+    ShowReadingTime: true
+    displayFullLangName: true
+    ShowBreadCrumbs: true
+    ShowCodeCopyButtons: true
+    ShowToc: true
+
+    profileMode:
+        # Disable to populate home page with 'mainSections' content
+        enabled: true
+        title: Mamadou Diagne
+        description: |
+
+          Hello, I am Mamadou.
+           Civic hacker ! 🇸🇳
+        imageUrl: "/images/profile.png"
+        imageTitle: Mamadou Diagne
+        # imageWidth: 120
+        # imageHeight: 120
+        buttons:
+            - name: Today I Learned
+              url: https://til.dofbi.com
+            - name: My stands
+              url: https://dofbi.medium.com
+            - name: My advices
+              url: https://advisor.dofbi.com
+            - name: Ride with me
+              url: https://ride.dofbi.com
+    mainSections:
+      - articles
+
+    socialIcons:
+        - name: buymeacoffee
+          url: "https://www.buymeacoffee.com/51JrBtX"
+        - name: github
+          url: "https://github.com/dofbi"
+        - name: linkedin
+          url: "https://www.linkedin.com/in/dofbi"
+        - name: twitch
+          url: "https://www.twitch.tv/dofbi"
+        - name: dev
+          url: "https://dev.to/dofbi"
+        - name: twitter
+          url: "https://twitter.com/dofbi"
+        - name: facebook
+          url: "https://www.facebook.com/dofbi.eth/"
+        - name: instagram
+          url: "https://instagram.com/dofbi.eth"
+        - name: telegram
+          url: "https://t.me/dofbi"
+
+
+    # change favicon in images folder (icon for web tab)
+    assets:
+          favicon: "/images/favicon.ico"
+          favicon16x16: "/images/favicon-16x16.png"
+          favicon32x32: "/images/favicon-32x32.png"
+          apple_touch_icon: "/images/apple-touch-icon.png"
+          safari_pinned_tab: "/images/apple-touch-icon.png"
+
+
+
+enableInlineShortcodes: true
+enableRobotsTXT: true
+enableEmoji: true
+pygmentsUseClasses: true
+
+minify:
+    disableXML: true
+
